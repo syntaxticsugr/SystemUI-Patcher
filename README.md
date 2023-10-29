@@ -1,7 +1,8 @@
 # SystemUI-Patcher
 A systemUI patcher mod used for injecting Xmls to SystemUI on any android device, Systemlessly. 
 
-Module Template by SyntaxticSugr
+Module Template by @Jai_08
+Updated By: SyntaxticSugr
 
 Feel free to use, modify, distribute as long as a part of credit is present.
 

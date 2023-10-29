@@ -1,3 +1,9 @@
+ui_print " "
+# Do not remove the credits if you are using part of this template.
+ui_print " Module Template by @Jai_08 // @cool_modules"
+ui_print " Updated By: SyntaxticSugr"
+ui_print "  "
+
 remove() {
     rm -rf /data/adb/modules_update/$MODID 2>/dev/null
     rm -rf /data/adb/modules/$MODID 2>/dev/null
