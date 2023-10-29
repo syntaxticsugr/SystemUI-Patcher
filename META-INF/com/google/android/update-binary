@@ -15,6 +15,7 @@ require_new_magisk() {
   ui_print "*******************************"
   exit 1
 }
+
 #########################
 # Load util_functions.sh
 #########################
@@ -44,6 +45,7 @@ echo " Module Template by @Jai_08 // @cool_modules "
 echo "  "
 
 install_module
+
 remove()
 {
 rm -rf /data/adb/modules_update/$MODID 2>/dev/null
@@ -236,4 +238,3 @@ echo " Reboot now to apply changes"
 echo " " 
 
 exit 0
-
