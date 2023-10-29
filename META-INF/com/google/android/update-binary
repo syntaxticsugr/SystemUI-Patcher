@@ -187,14 +187,13 @@ ui_print " Processing..... "
 ui_print " Miui A11+ Detected..."
 else
 ui_print " This Looks like a non supported Rom..."
-ui_print " Report in support group @cool_modules69 "
 remove
 exit 1
 fi
 
 insmodules=$(ls $mp)
-file=$MODPATH/jai/$apkname.apk
-mkdir -p $MODPATH/jai
+file=$MODPATH/syntaxticsugr/$apkname.apk
+mkdir -p $MODPATH/syntaxticsugr
 mkdir -p $bkpath
 cp -f $spath/$apkname.apk $bkpath
 for i in $insmodules
@@ -205,14 +204,14 @@ cp -f $mp/$i/OG/$apkname.apk $bkpath
 break
 fi
 done
-cp -f $spath/$apkname.apk $MODPATH/jai/
+cp -f $spath/$apkname.apk $MODPATH/syntaxticsugr/
 ui_print " " 
 cd $MODPATH/substratumXML/SystemUI/
 echo " "
 if $zipp -qq -r $file * ; then echo " Installing Patches..... "
 else 
 echo " Failed to Patch your SystemUI "
-echo " Try again, if same issue report in support group @cool_modules69 "
+echo " Try again "
 remove
 exit 1
 fi
@@ -220,12 +219,12 @@ echo " "
 mkdir -p $MODPATH/$spath
 if $zipa -f 4 $file $MODPATH/$spath/$apkname.apk ; then echo " Installed Successfully"
 else 
-echo " Failed to Install, Report in support group to add support @cool_modules69 "
+echo " Failed to Install "
 remove
 exit 1
 fi
 
-rm -r $MODPATH/jai/
+rm -r $MODPATH/syntaxticsugr/
 rm -r $MODPATH/utils/
 rm -r $MODPATH/substratumXML
 sed -i "s|myname|$apkname|g" $MODPATH/post-fs-data.sh &> /dev/null

@@ -1,4 +1,4 @@
-#Scripts by @Jai_08
+#Scripts by SyntaxticSugr
 #Write your custom functions here
 #Remove this and Add your own custom texts here
 ui_print "  " 
